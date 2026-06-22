@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wordle by Eric</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #686868;
+    padding: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(6, 80px);   /* 6 rows */
+    gap: 11px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .cell {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 200%;
+  }
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 300%;
+  }
+  .keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.key:hover {
+  background: #8f8f8f;
+}
+
+.row2 { margin-left: 25px; }
+.row3 { margin-left: 50px; }
+</style>
+</head>
+
+<body>
+<h1>Wordle by Eric</h1>
+<div class="grid">
+  <div class="cell" id=0></div>
+  <div class="cell" id=1></div>
+  <div class="cell" id=2></div>
+  <div class="cell" id=3></div>
+  <div class="cell" id=4></div>
+  <div class="cell" id=5></div>
+  <div class="cell" id=6></div>
+  <div class="cell" id=7></div>
+  <div class="cell" id=8></div>
+  <div class="cell" id=9></div>
+  <div class="cell" id=10></div>
+  <div class="cell" id=11></div>
+  <div class="cell" id=12></div>
+  <div class="cell" id=13></div>
+  <div class="cell" id=14></div>
+  <div class="cell" id=15></div>
+  <div class="cell" id=16></div>
+  <div class="cell" id=17></div>
+  <div class="cell" id=18></div>
+  <div class="cell" id=19></div>
+  <div class="cell" id=20></div>
+  <div class="cell" id=21></div>
+  <div class="cell" id=22></div>
+  <div class="cell" id=23></div>
+  <div class="cell" id=24></div>
+  <div class="cell" id=25></div>
+  <div class="cell" id=26></div>
+  <div class="cell" id=27></div>
+  <div class="cell" id=28></div>
+  <div class="cell" id=29></div>
+</div>
+<div class="keyboard">
+  <div class="row row1">
+    <button class="key">Q</button>
+    <button class="key">W</button>
+    <button class="key">E</button>
+    <button class="key">R</button>
+    <button class="key">T</button>
+    <button class="key">Y</button>
+    <button class="key">U</button>
+    <button class="key">I</button>
+    <button class="key">O</button>
+    <button class="key">P</button>
+  </div>
+  <div class="row row2">
+    <button class="key">A</button>
+    <button class="key">S</button>
+    <button class="key">D</button>
+    <button class="key">F</button>
+    <button class="key">G</button>
+    <button class="key">H</button>
+    <button class="key">J</button>
+    <button class="key">K</button>
+    <button class="key">L</button>
+  </div>
+  <div class="row row3">
+    <button class="key">Z</button>
+    <button class="key">X</button>
+    <button class="key">C</button>
+    <button class="key">V</button>
+    <button class="key">B</button>
+    <button class="key">N</button>
+    <button class="key">M</button>
+  </div>
+</div>
+<script src="../wordle.js"></script>
+</body>
+</html>
+</body>
+</html>
