@@ -20,6 +20,18 @@
             flex: 1;
             font-size: 200%;
         }
+        .hero-row {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .hero-row h1,
+        .hero-row p {
+            margin: 0;
+        }
         .site-footer {
             padding: 12px 0;
             color: #ffffff;
@@ -44,11 +56,18 @@
         img {
             user-select: none;
         }
+        .logo {
+            font-size: 200%;
+            color: #11c7ff;
+            font-family: 'Courier New', Courier, monospace, sans-serif; 
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1>Welcome to "hosenöffner.de"</h1>
+        <div class="hero-row">
+            <h1>Welcome to <span class="logo">Hosenöffner.de</span></h1>
+        </div>
         <p>This is a simple webpage i made for fun :)</p>
         <p>(Try typing "hosenoeffner" and see what happens!)</p>
         <div>
