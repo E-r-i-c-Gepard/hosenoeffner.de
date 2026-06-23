@@ -14,7 +14,7 @@ document.addEventListener('keydown', function (event) {
         full_word += pressedKey;
         if (full_word.endsWith("HOSENOEFFNER")) {
             // faster blinking: tweak these values to change speed
-            const blinkCount = 6;
+            const blinkCount = 10;
             const greenDuration = 120; // ms
             const redDuration = 120; // ms
             const cycle = greenDuration + redDuration;
@@ -28,6 +28,9 @@ document.addEventListener('keydown', function (event) {
                 full_word = "";
             }, blinkCount * cycle);
         }
+    }
+    if (full_word.endsWith("MEME")) {
+        window.location.href = "./pages/video.html";
     }
 });
 slider.addEventListener("mousedown", function () {
