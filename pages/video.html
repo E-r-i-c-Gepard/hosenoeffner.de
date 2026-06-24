@@ -6,6 +6,12 @@
     <title>You typed a word</title>
 </head>
 <body>
-    <video src="../videos/Sunshine,Rainbow,WhitePony.mp4" autoplay style="width: 100%; height: auto;"></video>
+    <video id="videoPlayer" src="../videos/Sunshine,Rainbow,WhitePony.mp4" autoplay style="width: 100%; height: auto;"></video>
+    <script>
+        const video = document.getElementById('videoPlayer');
+        video.addEventListener('ended', () => {
+            window.location.href = '../index.html';
+        });
+    </script>
 </body>
 </html>
