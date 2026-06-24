@@ -47,6 +47,18 @@
             margin: 0 20px;
             
         }
+        .secretbtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 100%;
+            margin: 20px 0;
+            opacity:0;
+            transition:0.3s;
+        }
         a {
             color: #00b3ff;
         }
@@ -67,6 +79,7 @@
     <main>
         <div class="hero-row">
             <h1>Welcome to <span class="logo">Hosenöffner.de</span></h1>
+            <a href="./pages/quiz.html" class="secretbtn" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">Secret Quiz</a>
         </div>
         <p>This is a simple webpage with a few secrets i made for fun :)</p>
         <p>(Try typing "hosenoeffner" or "meme" for example!)</p>
